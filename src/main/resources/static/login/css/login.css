@@ -56,15 +56,15 @@ a {
   text-decoration: none;
 }
 
-.em_sky {
+.em-sky {
   color: #bbf9ff;
 }
 
-.em_blue {
+.em-blue {
   color: #1978e3;
 }
 
-.em_pink {
+.em-pink {
   color: #f05480;
 }
 
@@ -137,13 +137,13 @@ label {
 }
 
 /* ========== 헤더 ========== */
-.first_box {
+.first-box {
   position: relative;
   padding-top: 111px;
   text-align: center;
 }
 
-.first_box .title_box .title {
+.first-box .title-box .title {
   position: relative;
   padding-left: 129px;
   color: #fff;
@@ -154,7 +154,7 @@ label {
   letter-spacing: -0.025em;
 }
 
-.first_box .title_box .title:before {
+.first-box .title-box .title:before {
   display: inline-block;
   position: absolute;
   top: -31px;
@@ -165,11 +165,11 @@ label {
   background-size: contain;
 }
 
-.first_box .title_box .title em {
+.first-box .title-box .title em {
   color: #bbf9ff;
 }
 
-.first_box .desc_box p {
+.first-box .desc-box p {
   color: #cad8ef;
   font-size: 18px;
   font-weight: 400;
@@ -178,24 +178,24 @@ label {
   word-break: keep-all;
 }
 
-.first_box .desc_box p span {
+.first-box .desc-box p span {
   margin-bottom: 21px;
   font-size: 23px;
   font-weight: 500;
   color: #fff;
 }
 
-.first_box .desc_box .em_blue {
+.first-box .desc-box .em-blue {
   color: #bbf9ff;
 }
 
-.first_box .desc_box>span {
+.first-box .desc-box>span {
   position: relative;
   margin-top: 2px;
   font-size: 17px;
 }
 
-.first_box .desc_box>span:before {
+.first-box .desc-box>span:before {
   display: block;
   position: absolute;
   top: 3px;
@@ -205,7 +205,7 @@ label {
   background: url('/login/images/login_sprite.png') no-repeat left -58px;
 }
 
-.home_link {
+.home-link {
   margin-bottom: 8px;
   display: block;
   position: absolute;
@@ -213,7 +213,7 @@ label {
   left: 0;
 }
 
-.home_link .home_btn {
+.home-link .home-btn {
   display: inline-block;
   font-size: 14px;
   color: #FFF;
@@ -232,7 +232,7 @@ label {
   transition: all 0.25s ease-in-out;
 }
 
-.first_box .home_link .home_btn:before {
+.first-box .home-link .home-btn:before {
   display: block;
   position: absolute;
   top: 0;
@@ -244,27 +244,27 @@ label {
   background: url('/login/images/login_sprite.png') no-repeat;
 }
 
-.first_box .home_link .home_btn > span {
+.first-box .home-link .home-btn > span {
   color: #fff;
   font-size: 16px;
   font-weight: 400;
   letter-spacing: -0.02em;
 }
 
-.title_box {
+.title-box {
   position: relative;
   margin-bottom: 48px;
   font-size: 0;
   line-height: 0;
 }
 
-.title_box .title {
+.title-box .title {
   font-size: 28px;
   font-weight: 800;
   letter-spacing: -0.02em;
 }
 
-.title_box .title em {
+.title-box .title em {
   color: #316CFF;
   font-style: normal;
 }
@@ -279,12 +279,12 @@ main {
 }
 
 /* ========== 로그인/버튼 영역 ========== */
-.form_box {
+.form-box {
   margin-top: 56px;
 }
 
 /* 그리드: 회원/ SNS / 비회원 */
-.form_list {
+.form-list {
   list-style: none;
   padding: 0;
   margin: 0;
@@ -293,7 +293,7 @@ main {
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
 }
 
-.form_item {
+.form-item {
   display: inline-block;
   position: relative;
   width: 475px;
@@ -306,7 +306,7 @@ main {
   vertical-align: top;
 }
 
-.form_item .form_title {
+.form-item .form-title {
   display: block;
   font-weight: 800;
   font-size: 18px;
@@ -314,7 +314,7 @@ main {
   background: #fff;
 }
 
-.form_box .form_wrap .form_title {
+.form-box .form-wrap .form-title {
   font-family: 'YeogiOttaeJalnanGothic';
   color: #242a3a;
   font-size: 25px;
@@ -323,31 +323,31 @@ main {
 }
 
 /* 입력 영역 */
-.login_inp_box {
+.login-inp-box {
   display: grid;
   gap: 12px;
 }
 
-.form_box .form_wrap .login_inp_box {
+.form-box .form-wrap .login-inp-box {
   display: block;
   position: relative;
   margin-bottom: 5px;
 }
 
-.login_inp {
+.login-inp {
   display: block;
   position: relative;
   margin-bottom: 5px;
 }
 
-.login_inp label {
+.login-inp label {
   display: block;
   font-size: 13px;
   color: #666;
   margin-bottom: 6px;
 }
 
-.form_box .form_wrap .login_inp label {
+.form-box .form-wrap .login-inp label {
   display: inline-block;
   position: absolute;
   top: 0;
@@ -357,7 +357,7 @@ main {
   height: 48px;
 }
 
-.form_box .form_wrap .login_inp label:before {
+.form-box .form-wrap .login-inp label:before {
   display: block;
   position: absolute;
   top: 0;
@@ -370,8 +370,8 @@ main {
   background: url(/login/images/login_sprite.png) no-repeat left -85px;
 }
 
-.login_inp input[type="text"],
-.login_inp input[type="password"] {
+.login-inp input[type="text"],
+.login-inp input[type="password"] {
   display: block;
   position: relative;
   width: 100%;
@@ -387,12 +387,12 @@ main {
   letter-spacing: -0.025em;
 }
 
-.login_inp input:focus {
+.login-inp input:focus {
   border-color: #316CFF;
   box-shadow: 0 0 0 3px rgba(49, 108, 255, 0.15);
 }
 
-.form_box .form_wrap .login_inp input {
+.form-box .form-wrap .login-inp input {
   display: block;
   position: relative;
   width: 100%;
@@ -409,11 +409,11 @@ main {
 }
 
 /* 비밀번호 보기 버튼 */
-.login_inp.userPasswd {
+.login-inp.userPasswd {
   position: relative;
 }
 
-.login_inp.userPasswd .btn_view {
+.login-inp.userPasswd .btn-view {
   position: absolute;
   right: 8px;
   top: 50%;
@@ -426,7 +426,7 @@ main {
   border-radius: 8px;
 }
 
-.btn_view:before {
+.btn-view:before {
   display: block;
   position: absolute;
   top: 0;
@@ -441,17 +441,17 @@ main {
   background-position: left -145px;
 }
 
-.form_box .form_wrap .login_inp.userPasswd label:before {
+.form-box .form-wrap .login-inp.userPasswd label:before {
   width: 16px;
   height: 20px;
   background: url('/login/images/login_sprite.png') no-repeat left -115px;
 }
 
-.login_inp.userPasswd .btn_view:focus-visible {
+.login-inp.userPasswd .btn-view:focus-visible {
   outline: 2px solid #316CFF;
 }
 
-.btn_view:before {
+.btn-view:before {
   display: block;
   position: absolute;
   top: 0;
@@ -466,14 +466,14 @@ main {
   background-position: left -145px;
 }
 
-.btn_view.view:before {
+.btn-view.view:before {
   width: 21px;
   height: 14px;
   background-position: left -175px;
 }
 
 /* 로그인 버튼 */
-.login_inp_btn {
+.login-inp-btn {
   height: 44px;
   border: none;
   border-radius: 10px;
@@ -495,23 +495,23 @@ main {
   text-align: center;
 }
 
-.login_inp_btn:hover {
+.login-inp-btn:hover {
   filter: brightness(0.95);
 }
 
 /* 회원가입/찾기 링크 */
-.find_wrap {
+.find-wrap {
   /* display: flex; */
   gap: 12px;
   margin-top: 10px;
   flex-wrap: wrap;
 }
 
-.form_box .find_wrap {
+.form-box .find-wrap {
   text-align: left;
 }
 
-.find_wrap .find_anchor {
+.find-wrap .find-anchor {
   display: inline-block;
   font-size: 14px;
   text-decoration: none;
@@ -524,41 +524,41 @@ main {
   letter-spacing: -0.02em;
 }
 
-/* .find_wrap .find_anchor:hover {
+/* .find-wrap .find-anchor:hover {
   background: rgba(49, 108, 255, 0.12);
 } */
 
-.form_box .find_wrap .find_anchor:last-child {
+.form-box .find-wrap .find-anchor:last-child {
   float: right;
 }
 
 /* 팝업 박스 (기본 숨김) */
-.popup_box {
+.popup-box {
   display: none;
 }
 
-.popup_box .popup_wrap {
+.popup-box .popup-wrap {
   background: #fff;
   border: 1px solid #e5e8ef;
   border-radius: 12px;
   padding: 16px;
 }
 
-.popup_box .popup_title {
+.popup-box .popup-title {
   font-weight: 800;
   margin: 0 0 6px;
 }
 
-.popup_box .popup_text {
+.popup-box .popup-text {
   margin: 0 0 10px;
   color: #555;
 }
 
-.popup_box .em_pink {
+.popup-box .em-pink {
   color: #ff3b8a;
 }
 
-.popup_box .close {
+.popup-box .close {
   border: none;
   background: #eee;
   border-radius: 8px;
@@ -567,12 +567,12 @@ main {
 }
 
 /* SNS/비회원 버튼 */
-.btn_box {
+.btn-box {
   display: grid;
   gap: 10px;
 }
 
-.check_btn {
+.check-btn {
   height: 44px;
   border: 1px solid #d7dbe3;
   background: #f9fafc;
@@ -593,11 +593,11 @@ main {
   text-align: left;
 }
 
-.form_box .form_wrap .btn_box .check_btn:last-child {
+.form-box .form-wrap .btn-box .check-btn:last-child {
   margin-top: 10px;
 }
 
-.form_box .form_wrap .btn_box .check_btn:before {
+.form-box .form-wrap .btn-box .check-btn:before {
   display: block;
   position: absolute;
   top: 0;
@@ -608,7 +608,7 @@ main {
   background-repeat: no-repeat;
 }
 
-.form_box .form_wrap .btn_box .check_btn:after {
+.form-box .form-wrap .btn-box .check-btn:after {
   display: block;
   position: absolute;
   top: 0;
@@ -620,40 +620,40 @@ main {
   background: url('/login/images/login_sprite.png') no-repeat left -257px;
 }
 
-.check_btn:hover {
+.check-btn:hover {
   filter: brightness(0.97);
 }
 
 /* 서비스별 색감(선택) */
-.check_btn.naver {
+.check-btn.naver {
   background: #129b3c;
   border: #129b3c;
 }
 
-.form_box .form_wrap .btn_box .check_btn.naver:before {
+.form-box .form-wrap .btn-box .check-btn.naver:before {
   width: 15px;
   height: 15px;
   background-position: left -199px;
 }
 
-.check_btn.kakao {
+.check-btn.kakao {
   background: #f8da33;
   border: 3px solid #f8da33;
   color: #1a1919;
 }
 
-.form_box .form_wrap .btn_box .check_btn.kakao:before {
+.form-box .form-wrap .btn-box .check-btn.kakao:before {
   left: 28px;
   width: 24px;
   height: 23px;
   background-position: left -224px;
 }
 
-.check_btn.phone {
+.check-btn.phone {
   background-color: #0a266b;
 }
 
-.form_box .form_wrap .btn_box .check_btn.phone:before {
+.form-box .form-wrap .btn-box .check-btn.phone:before {
   background: url('/login/images/login_sprite.png');
   left: 32px;
   width: 23px;
@@ -661,11 +661,11 @@ main {
   background-position: left -279px;
 }
 
-.check_btn.ipin {
+.check-btn.ipin {
   background-color: #1978e3;
 }
 
-.form_box .form_wrap .btn_box .check_btn.ipin:before {
+.form-box .form-wrap .btn-box .check-btn.ipin:before {
   background: url('/login/images/login_sprite.png');
   left: 30px;
   width: 27px;
@@ -674,7 +674,7 @@ main {
 }
 
 
-.login_caution {
+.login-caution {
   margin-top: 10px;
   color: #636363;
   font-size: 15px;
@@ -682,7 +682,7 @@ main {
   text-align: left;
 }
 
-.login_caution .em_pink {
+.login-caution .em-pink {
   color: #ff3b8a;
 }
 
@@ -691,7 +691,7 @@ main {
   margin-top: 22px;
 }
 
-.footer_inner {
+.footer-inner {
   margin-top: 94px;
   font-size: 15px;
   line-height: 26px;
@@ -701,19 +701,19 @@ main {
   text-align: center;
 }
 
-.footer_info {
+.footer-info {
   margin-bottom: 8px;
 }
 
-.footer_info .address {
+.footer-info .address {
   margin: 0 0 6px;
 }
 
-.footer_info .tel {
+.footer-info .tel {
   margin: 0;
 }
 
-.footer_inner p span {
+.footer-inner p span {
   font-weight: 500;
 }
 
