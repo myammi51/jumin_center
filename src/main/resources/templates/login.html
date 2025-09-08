@@ -42,8 +42,8 @@
                                         </div>
                                         <button type="submit" class="login-inp-btn">로그인</button>
                                         <div class="find-wrap clearfix">
-                                            <a href="" class="find-anchor">회원가입</a>
-                                            <a href="" class="find-anchor">아이디/비밀번호 찾기</a>
+                                            <a href="/signup" class="find-anchor">회원가입</a>
+                                            <a href="/findAccount" class="find-anchor" onclick="openFindPopup(event)">아이디/비밀번호 찾기</a>
                                         </div>
                                     </div>
                                 </form>
@@ -91,6 +91,11 @@
         </div>
 
     </div>
-
+    <script>
+        function openFindPopup(e) {
+            e.preventDefault(); // 기본 링크 이동 막기
+            window.open('/findAccount', 'findPopup', 'width=600,height=700,scrollbars=yes,resizable=no');
+        }
+    </script>
 </body>
 </html>
