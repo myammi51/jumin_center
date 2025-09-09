@@ -51,7 +51,7 @@
                             <li class="form-item n02">
                                 <span class="form-title">SNS 로그인</span>
                                 <div class="btn-box">
-                                    <button type="button" class="check-btn naver">네이버 간편 로그인</button>
+                                    <button type="button" class="check-btn naver" onclick="onNaverLogin()">네이버 간편 로그인</button>
                                     <button type="button" class="check-btn kakao">카카오 간편 로그인</button>
                                     <p class="login-caution">
                                         SNS로그인을 사용하시려면 회원가입이 필수이며, <em class="em-pink">최초 1회 계정인증</em>이 필요합니다
@@ -96,6 +96,16 @@
             e.preventDefault(); // 기본 링크 이동 막기
             window.open('/findAccount', 'findPopup', 'width=600,height=700,scrollbars=yes,resizable=no');
         }
+
+        function onNaverLogin() {
+        const clientId = 'PEnFelOXlfDdetDwx5mv'; // 네이버에서 발급받은 Client ID
+        const redirectUri = 'http://localhost:9050/oauth/naver/callback';
+        const state = Math.random().toString(36).substring(2, 15); // CSRF 방지용
+
+        const naverAuthUrl = `https://nid.naver.com/oauth2.0/authorize?response_type=code&client_id=${clientId}&redirect_uri=${encodeURIComponent(redirectUri)}&state=${state}`;
+
+        window.location.href = naverAuthUrl;
+    }
     </script>
 </body>
 </html>
